@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <nav>
+      
+      <h1><u>EMPLOYEE APPLICATION FORM</u></h1>
+    </nav>
+    <form method="post" action="/registration.com" name="myform" onsubmit="return validate()">
+    <div class="container">
+      <div class="one">
+        <h1 class="titles">Registration Here:</h1>
+        <!-- Personal Information -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"  />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password"  />
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password"  />
+
+          <label for="security-question">Security Question:</label>
+          <input type="text" id="security-question" name="security-question"  />
+
+          <!-- Address Information -->
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" ></textarea>
+          <h1 class="titles">Qualifications:</h1>
+          <!-- Qualifications Information -->
+          <label for="university">Select University:</label>
+          <select id="university" name="university" >
+            <option value="">--Select University--</option>
+            <option value="university1">University 1</option>
+            <option value="university2">University 2</option>
+            <!-- Add more university options as needed -->
+          </select>
+          <!-- Highest Qualifications -->
+          <label for="Highest-qualification">Highest Qualifications:</label>
+          <select id="Highest-qualification" name="Highest" >
+            <option value="">--Highest Qualification--</option>
+            <option value="university1">B.Tech</option>
+            <option value="university2">MBA</option>
+            <!-- Add more university options as needed -->
+          </select>
+          
+          <label for="grade-points">Grade Points:</label>
+          <input type="tel" id="grade-points" name="grade-points"  />
+          
+        
+      </div>
+      <div class="two">
+        <h1 class="titles">Your Details:</h1>
+          <!-- Your Details -->
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name"  />
+
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name"  />
+
+          <!-- Your Details -->
+          <!-- Your Details -->
+          <div class="relocation-container">
+            <label for="relocation-">Relocation :</label>
+            <span class="radio-container">
+              <input type="radio" id="relocation-yes" name="relocation-" value="yes" />
+              <label for="relocation-yes">Yes</label>
+            </span>
+            <span class="radio-container">
+              <input type="radio" id="relocation-no" name="relocation-" value="no" />
+              <label for="relocation-no">No</label>
+            </span>
+          </div>
+
+
+
+
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country"  />
+
+          <label for="phone-number">Phone Number:</label>
+          <input type="tel" id="phone-number" name="phone-number"  />
+
+          <label for="date-of-birth">Date of Birth (dd-mm-yyyy):</label>
+          <input type="text" id="date-of-birth" name="date-of-birth"  />
+
+          <label for="file-upload">Choose Files:pdf only</label>
+          <input type="file" id="file-upload" name="file-upload" multiple />
+
+          <label for="status-message">Status Message:</label>
+          <textarea id="status-message" name="status-message"></textarea>
+
+          <button class="but" type="submit" value="Submit">Submit</button>
+        
+        
+      </div>
+    </div>
+  </form>
+  
+  <footer>
+      
+  </footer>
+  <script src="script.js"></script>
+  </body>
+</html>
