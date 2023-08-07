@@ -73,7 +73,7 @@ function validate() {
     }
 
     // Validate phone number
-    if (isNaN(phoneNumber)|| phoneNumber <= 0) {
+    if (isNaN(phoneNumber)|| phoneNumber <= 0 || phoneNumber>1000000000) {
       alert("Please enter a valid phone number.");
       val=false;
     }
